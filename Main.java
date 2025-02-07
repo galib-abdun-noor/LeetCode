@@ -9,5 +9,7 @@ public class Main {
         System.out.println(pal.isPalindrome("A man, a plan, a canal: Panama"));
         ContainsDuplicate cd = new ContainsDuplicate();
         System.out.println(cd.containsDuplicate(nums));
+        IsAnagram ia = new IsAnagram();
+        System.out.println(ia.isAnagram("anagram", "nagaram"));
     }
 }

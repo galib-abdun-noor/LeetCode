@@ -11,5 +11,7 @@ public class Main {
         System.out.println(cd.containsDuplicate(nums));
         IsAnagram ia = new IsAnagram();
         System.out.println(ia.isAnagram("anagram", "nagaram"));
+        UniquePaths up = new UniquePaths();
+        System.out.println(up.uniquePaths(3,7));
     }
 }

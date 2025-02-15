@@ -15,9 +15,18 @@ public class Main {
         System.out.println(up.uniquePaths(3,7));
         MissingNumber mn = new MissingNumber();
         System.out.println(mn.missingNumber(nums));
-        UniquePaths up = new UniquePaths();
-        System.out.println(up.uniquePaths(3,7));
         HammingWeight hw = new HammingWeight();
         System.out.println(hw.hammingWeight(11));
+        ListNode n5 = new ListNode(1);
+        ListNode n6 = new ListNode(2);
+        ListNode n7 = new ListNode(3);
+        ListNode n8 = new ListNode(4);
+        ListNode n9 = new ListNode(5);
+        n5.next = n6;
+        n6.next = n7;
+        n7.next = n8;
+        n8.next = n9;
+        ReverseList rl = new ReverseList();
+        System.out.println(rl.reverseList(n5));
     }
 }

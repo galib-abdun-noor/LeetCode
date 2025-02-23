@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        int nums[] = {1,3,5,6};
         TwoSum ts = new TwoSum();
-        int nums[] = {3,0,1};
         System.out.println(Arrays.toString(ts.twoSum(nums, 9)));
         IsPalindrome pal = new IsPalindrome();
         System.out.println(pal.isPalindrome("A man, a plan, a canal: Panama"));
@@ -28,5 +28,7 @@ public class Main {
         n8.next = n9;
         ReverseList rl = new ReverseList();
         System.out.println(rl.reverseList(n5));
+        SearchInsert si = new SearchInsert();
+        System.out.println(si.searchInsert(nums,5));
     }
 }

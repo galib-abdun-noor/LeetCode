@@ -30,5 +30,8 @@ public class Main {
         System.out.println(rl.reverseList(n5));
         SearchInsert si = new SearchInsert();
         System.out.println(si.searchInsert(nums,5));
+        String[] strs = {"flower","flow","flight"};
+        LongestCommonPrefix lcp = new LongestCommonPrefix();
+        System.out.println(lcp.longestCommonPrefix(strs));
     }
 }

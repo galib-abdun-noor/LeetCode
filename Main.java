@@ -33,5 +33,29 @@ public class Main {
         String[] strs = {"flower","flow","flight"};
         LongestCommonPrefix lcp = new LongestCommonPrefix();
         System.out.println(lcp.longestCommonPrefix(strs));
+        System.out.println("(21) Merge Two Sorted Lists");
+        ListNode n10 = new ListNode(3);
+        ListNode n11 = new ListNode(4);
+        ListNode n12 = new ListNode(5);
+        ListNode n13 = new ListNode(6);
+        n10.next = n11;
+        n11.next = n12;
+        n12.next = n13;
+        ListNode m5 = new ListNode(1);
+        ListNode m6 = new ListNode(2);
+        ListNode m7 = new ListNode(3);
+        ListNode m8 = new ListNode(4);
+        ListNode m9 = new ListNode(5);
+        m5.next = m6;
+        m6.next = m7;
+        m7.next = m8;
+        m8.next = m9;
+        MergeTwoLists mtl = new MergeTwoLists();
+        ListNode head = mtl.mergeTwoLists(n10,m5);
+        System.out.println("output: ");
+        while(head!=null){
+            System.out.print(head.val+" ");
+            head = head.next;
+        }
     }
 }

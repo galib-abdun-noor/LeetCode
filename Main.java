@@ -57,8 +57,11 @@ public class Main {
 //            System.out.print(head.val+" ");
 //            head = head.next;
 //        }
-        int nums[] = {4,5,6,7,0,1,2};
-        Search s = new Search();
-        System.out.println(s.search(nums,3));
+//        int nums[] = {4,5,6,7,0,1,2};
+//        Search s = new Search();
+//        System.out.println(s.search(nums,3));
+        int numbers[] = {2,7,11,15};
+        TwoSum2 ts2 = new TwoSum2();
+        System.out.println(ts2.twoSum(numbers,9));
     }
 }

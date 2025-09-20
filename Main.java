@@ -63,8 +63,10 @@ public class Main {
 //        int numbers[] = {2,7,11,15};
 //        TwoSum2 ts2 = new TwoSum2();
 //        System.out.println(ts2.twoSum(numbers,9));
-        int[] height = {1,8,6,2,5,4,8,3,7};
-        MaxArea ma = new MaxArea();
-        System.out.println(ma.maxArea(height));
+//        int[] height = {1,8,6,2,5,4,8,3,7};
+//        MaxArea ma = new MaxArea();
+//        System.out.println(ma.maxArea(height));
+        ClimbStairs cs = new ClimbStairs();
+        System.out.println(cs.climbStairs(3));
     }
 }

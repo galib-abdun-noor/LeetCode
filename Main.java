@@ -66,7 +66,9 @@ public class Main {
 //        int[] height = {1,8,6,2,5,4,8,3,7};
 //        MaxArea ma = new MaxArea();
 //        System.out.println(ma.maxArea(height));
-        ClimbStairs cs = new ClimbStairs();
-        System.out.println(cs.climbStairs(3));
+//        ClimbStairs cs = new ClimbStairs();
+//        System.out.println(cs.climbStairs(3));
+        LengthOfLongestSubstring lls = new LengthOfLongestSubstring();
+        System.out.println("output: "+lls.lengthOfLongestSubstring("ckilbkd"));
     }
 }

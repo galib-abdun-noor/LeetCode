@@ -68,7 +68,11 @@ public class Main {
 //        System.out.println(ma.maxArea(height));
 //        ClimbStairs cs = new ClimbStairs();
 //        System.out.println(cs.climbStairs(3));
-        LengthOfLongestSubstring lls = new LengthOfLongestSubstring();
-        System.out.println("output: "+lls.lengthOfLongestSubstring("ckilbkd"));
+//        LengthOfLongestSubstring lls = new LengthOfLongestSubstring();
+//        System.out.println("output: "+lls.lengthOfLongestSubstring("ckilbkd"));
+        int[] nums7 = {1,2};
+        int[] nums8 = {3,4};
+        FindMedianSortedArrays fmtsa = new FindMedianSortedArrays();
+        System.out.println("output: "+fmtsa.findMedianSortedArrays(nums7,nums8));
     }
 }

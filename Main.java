@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 //        int nums[] = {1,3,5,6};
@@ -70,9 +68,12 @@ public class Main {
 //        System.out.println(cs.climbStairs(3));
 //        LengthOfLongestSubstring lls = new LengthOfLongestSubstring();
 //        System.out.println("output: "+lls.lengthOfLongestSubstring("ckilbkd"));
-        int[] nums7 = {1,2};
-        int[] nums8 = {3,4};
-        FindMedianSortedArrays fmtsa = new FindMedianSortedArrays();
-        System.out.println("output: "+fmtsa.findMedianSortedArrays(nums7,nums8));
+//        int[] nums7 = {1,2};
+//        int[] nums8 = {3,4};
+//        FindMedianSortedArrays fmtsa = new FindMedianSortedArrays();
+//        System.out.println("output: "+fmtsa.findMedianSortedArrays(nums7,nums8));
+        String s ="()[]{}";
+        IsValid iv = new IsValid();
+        System.out.println(iv.isValid(s));
     }
 }

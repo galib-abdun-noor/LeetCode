@@ -72,8 +72,10 @@ public class Main {
 //        int[] nums8 = {3,4};
 //        FindMedianSortedArrays fmtsa = new FindMedianSortedArrays();
 //        System.out.println("output: "+fmtsa.findMedianSortedArrays(nums7,nums8));
-        String s ="()[]{}";
-        IsValid iv = new IsValid();
-        System.out.println(iv.isValid(s));
+//        String s ="()[]{}";
+//        IsValid iv = new IsValid();
+//        System.out.println(iv.isValid(s));
+        PascalTriangle pt = new PascalTriangle();
+        System.out.println(pt.generate(5));
     }
 }

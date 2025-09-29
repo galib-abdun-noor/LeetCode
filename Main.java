@@ -75,7 +75,9 @@ public class Main {
 //        String s ="()[]{}";
 //        IsValid iv = new IsValid();
 //        System.out.println(iv.isValid(s));
-        PascalTriangle pt = new PascalTriangle();
-        System.out.println(pt.generate(5));
+//        PascalTriangle pt = new PascalTriangle();
+//        System.out.println(pt.generate(5));
+        PalindromeNumber pn = new PalindromeNumber();
+        System.out.println(pn.isPalindrome(121));
     }
 }

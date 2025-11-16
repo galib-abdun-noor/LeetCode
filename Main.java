@@ -87,5 +87,8 @@ public class Main {
                 {15, 18}
         };
         System.out.println(m.merge(intervals));
+        String s = "the sky is blue";
+        ReverseWords rw = new ReverseWords();
+        System.out.println(rw.reverseWords(s));
     }
 }

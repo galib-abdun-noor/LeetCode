@@ -79,16 +79,20 @@ public class Main {
 //        System.out.println(pt.generate(5));
 //        PalindromeNumber pn = new PalindromeNumber();
 //        System.out.println(pn.isPalindrome(121));
-        Merge m = new Merge();
-        int[][] intervals = {
-                {1, 3},
-                {2, 6},
-                {8, 10},
-                {15, 18}
-        };
-        System.out.println(m.merge(intervals));
-        String s = "the sky is blue";
-        ReverseWords rw = new ReverseWords();
-        System.out.println(rw.reverseWords(s));
+//        Merge m = new Merge();
+//        int[][] intervals = {
+//                {1, 3},
+//                {2, 6},
+//                {8, 10},
+//                {15, 18}
+//        };
+//        System.out.println(m.merge(intervals));
+//        String s = "the sky is blue";
+//        ReverseWords rw = new ReverseWords();
+//        System.out.println(rw.reverseWords(s));
+
+        MaxProfit mp = new MaxProfit();
+        int[] prices = {7,1,5,3,6,4};
+        System.out.println(mp.maxProfit(prices));
     }
 }

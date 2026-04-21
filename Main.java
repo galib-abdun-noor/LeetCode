@@ -90,9 +90,11 @@ public class Main {
 //        String s = "the sky is blue";
 //        ReverseWords rw = new ReverseWords();
 //        System.out.println(rw.reverseWords(s));
-
-        MaxProfit mp = new MaxProfit();
-        int[] prices = {7,1,5,3,6,4};
-        System.out.println(mp.maxProfit(prices));
+//        MaxProfit mp = new MaxProfit();
+//        int[] prices = {7,1,5,3,6,4};
+//        System.out.println(mp.maxProfit(prices));
+        CourseSchedule cs = new CourseSchedule();
+        int[][] prerequisites = {{1,0},{0,1}};
+        System.out.println(cs.canFinish(2,prerequisites));
     }
 }

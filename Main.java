@@ -93,8 +93,23 @@ public class Main {
 //        MaxProfit mp = new MaxProfit();
 //        int[] prices = {7,1,5,3,6,4};
 //        System.out.println(mp.maxProfit(prices));
-        CourseSchedule cs = new CourseSchedule();
-        int[][] prerequisites = {{1,0},{0,1}};
-        System.out.println(cs.canFinish(2,prerequisites));
+//        CourseSchedule cs = new CourseSchedule();
+//        int[][] prerequisites = {{1,0},{0,1}};
+//        System.out.println(cs.canFinish(2,prerequisites));
+        ListNode m10 = new ListNode(1);
+        ListNode m11 = new ListNode(2);
+        ListNode m12 = new ListNode(3);
+        ListNode m13 = new ListNode(4);
+        ListNode m14 = new ListNode(5);
+        m10.next = m11;
+        m11.next = m12;
+        m12.next = m13;
+        m13.next = m14;
+        RemoveNthFromEnd rnfe = new RemoveNthFromEnd();
+        ListNode head = rnfe.removeNthFromEnd(m10,2);
+        while(head != null){
+            System.out.println(head.val);
+            head = head.next;
+        }
     }
 }

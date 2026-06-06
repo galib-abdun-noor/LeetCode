@@ -111,7 +111,10 @@ public class Main {
 //            System.out.println(head.val);
 //            head = head.next;
 //        }
-        HammingDistance hd = new HammingDistance();
-        System.out.println("461. Hamming Distance: " + hd.hammingDistance(1,4));
+//        HammingDistance hd = new HammingDistance();
+//        System.out.println("461. Hamming Distance: " + hd.hammingDistance(1,4));
+        LeftRightDifference lrd = new LeftRightDifference();
+        int arr[] = {10,4,8,3};
+        System.out.println("2574. Left and Right Sum Differences: " + lrd.leftRightDifference(arr));
     }
 }

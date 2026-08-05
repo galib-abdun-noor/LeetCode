@@ -113,8 +113,17 @@ public class Main {
 //        }
 //        HammingDistance hd = new HammingDistance();
 //        System.out.println("461. Hamming Distance: " + hd.hammingDistance(1,4));
-        LeftRightDifference lrd = new LeftRightDifference();
-        int arr[] = {10,4,8,3};
-        System.out.println("2574. Left and Right Sum Differences: " + lrd.leftRightDifference(arr));
+//        LeftRightDifference lrd = new LeftRightDifference();
+//        int arr[] = {10,4,8,3};
+//        System.out.println("2574. Left and Right Sum Differences: " + lrd.leftRightDifference(arr));
+//        GenerateParenthesis gp = new GenerateParenthesis();
+//        System.out.println(gp.generateParenthesis(3));
+        MinPathSum mps = new MinPathSum();
+        int[][] grid1 = {
+                {1, 3, 1},
+                {1, 5, 1},
+                {4, 2, 1}
+        };
+        System.out.println("64. Minimum Path Sum " + mps.minPathSum(grid1));
     }
 }

@@ -118,12 +118,51 @@ public class Main {
 //        System.out.println("2574. Left and Right Sum Differences: " + lrd.leftRightDifference(arr));
 //        GenerateParenthesis gp = new GenerateParenthesis();
 //        System.out.println(gp.generateParenthesis(3));
-        MinPathSum mps = new MinPathSum();
-        int[][] grid1 = {
-                {1, 3, 1},
-                {1, 5, 1},
-                {4, 2, 1}
-        };
-        System.out.println("64. Minimum Path Sum " + mps.minPathSum(grid1));
+//        MinPathSum mps = new MinPathSum();
+//        int[][] grid1 = {
+//                {1, 3, 1},
+//                {1, 5, 1},
+//                {4, 2, 1}
+//        };
+//        System.out.println("64. Minimum Path Sum " + mps.minPathSum(grid1));
+
+        SwapPairs sp = new SwapPairs();
+        // Example 1: [1,2,3,4] -> [2,1,4,3]
+        ListNode head1 = buildList(new int[]{1, 2, 3, 4});
+        printList(sp.swapPairs(head1));
+
+        // Example 2: [] -> []
+        ListNode head2 = buildList(new int[]{});
+        printList(sp.swapPairs(head2));
+
+        // Example 3: [1] -> [1]
+        ListNode head3 = buildList(new int[]{1});
+        printList(sp.swapPairs(head3));
+
+        // Example 4: [1,2,3] -> [2,1,3]
+        ListNode head4 = buildList(new int[]{1, 2, 3});
+        printList(sp.swapPairs(head4));
+    }
+
+    private static ListNode buildList(int[] values) {
+        ListNode dummy = new ListNode(0);
+        ListNode current = dummy;
+        for (int val : values) {
+            current.next = new ListNode(val);
+            current = current.next;
+        }
+        return dummy.next;
+    }
+
+    // Helper: prints a linked list in LeetCode-style array format
+    private static void printList(ListNode head) {
+        StringBuilder sb = new StringBuilder("[");
+        while (head != null) {
+            sb.append(head.val);
+            if (head.next != null) sb.append(",");
+            head = head.next;
+        }
+        sb.append("]");
+        System.out.println(sb.toString());
     }
 }

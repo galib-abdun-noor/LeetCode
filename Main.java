@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 //        int nums[] = {1,3,5,6};
@@ -126,43 +128,73 @@ public class Main {
 //        };
 //        System.out.println("64. Minimum Path Sum " + mps.minPathSum(grid1));
 
-        SwapPairs sp = new SwapPairs();
-        // Example 1: [1,2,3,4] -> [2,1,4,3]
-        ListNode head1 = buildList(new int[]{1, 2, 3, 4});
-        printList(sp.swapPairs(head1));
+//        SwapPairs sp = new SwapPairs();
+//        // Example 1: [1,2,3,4] -> [2,1,4,3]
+//        ListNode head1 = buildList(new int[]{1, 2, 3, 4});
+//        printList(sp.swapPairs(head1));
+//
+//        // Example 2: [] -> []
+//        ListNode head2 = buildList(new int[]{});
+//        printList(sp.swapPairs(head2));
+//
+//        // Example 3: [1] -> [1]
+//        ListNode head3 = buildList(new int[]{1});
+//        printList(sp.swapPairs(head3));
+//
+//        // Example 4: [1,2,3] -> [2,1,3]
+//        ListNode head4 = buildList(new int[]{1, 2, 3});
+//        printList(sp.swapPairs(head4));
+//    }
+//
+//    private static ListNode buildList(int[] values) {
+//        ListNode dummy = new ListNode(0);
+//        ListNode current = dummy;
+//        for (int val : values) {
+//            current.next = new ListNode(val);
+//            current = current.next;
+//        }
+//        return dummy.next;
+//    }
+//
+//    // Helper: prints a linked list in LeetCode-style array format
+//    private static void printList(ListNode head) {
+//        StringBuilder sb = new StringBuilder("[");
+//        while (head != null) {
+//            sb.append(head.val);
+//            if (head.next != null) sb.append(",");
+//            head = head.next;
+//        }
+//        sb.append("]");
+//        System.out.println(sb.toString());
 
-        // Example 2: [] -> []
-        ListNode head2 = buildList(new int[]{});
-        printList(sp.swapPairs(head2));
+        CombinationSum cs = new CombinationSum();
+        // Test Case 1: Example 1 from the problem
+        // candidates = [2,3,6,7], target = 7
+        // Expected: [[2,2,3],[7]]
+        runTest(cs, new int[]{2, 3, 6, 7}, 7, "Test 1 (example 1)");
 
-        // Example 3: [1] -> [1]
-        ListNode head3 = buildList(new int[]{1});
-        printList(sp.swapPairs(head3));
-
-        // Example 4: [1,2,3] -> [2,1,3]
-        ListNode head4 = buildList(new int[]{1, 2, 3});
-        printList(sp.swapPairs(head4));
+        // Test Case 2: Example 2 from the problem
+        // candidates = [2,3,5], target = 8
+        // Expected: [[2,2,2,2],[2,3,3],[3,5]]
+        runTest(cs, new int[]{2, 3, 5}, 8, "Test 2 (example 2)");
     }
 
-    private static ListNode buildList(int[] values) {
-        ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
-        for (int val : values) {
-            current.next = new ListNode(val);
-            current = current.next;
-        }
-        return dummy.next;
+    private static void runTest(CombinationSum cs, int[] candidates, int target, String label) {
+        List<List<Integer>> result = cs.combinationSum(candidates, target);
+        System.out.println(label);
+        System.out.println("  candidates = " + arrToString(candidates) + ", target = " + target);
+        System.out.println("  result = " + result);
+        System.out.println("  count  = " + result.size());
+        System.out.println();
     }
 
-    // Helper: prints a linked list in LeetCode-style array format
-    private static void printList(ListNode head) {
+    private static String arrToString(int[] arr) {
         StringBuilder sb = new StringBuilder("[");
-        while (head != null) {
-            sb.append(head.val);
-            if (head.next != null) sb.append(",");
-            head = head.next;
+        for (int i = 0; i < arr.length; i++) {
+            sb.append(arr[i]);
+            if (i < arr.length - 1) sb.append(",");
         }
         sb.append("]");
-        System.out.println(sb.toString());
+        return sb.toString();
     }
 }
